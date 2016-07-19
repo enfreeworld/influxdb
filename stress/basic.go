@@ -678,8 +678,11 @@ func (o *outputConfig) HTTPHandler(method string) func(r <-chan response, rt *Ti
 			Precision:       "ns",
 		})
 		for p := range r {
+			tags := make(map[string]string)
 			o.mu.Lock()
-			tags := o.tags
+			for k, v := range o.tags {
+				tags[k] = v
+			}
 			o.mu.Unlock()
 			tags["method"] = method
 			fields := map[string]interface{}{
