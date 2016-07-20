@@ -95,6 +95,7 @@ With this release the systemd configuration files for InfluxDB will use the syst
 - [#6819](https://github.com/influxdata/influxdb/issues/6819): Database unresponsive after DROP MEASUREMENT
 - [#6796](https://github.com/influxdata/influxdb/issues/6796): Out of Memory Error when Dropping Measurement
 - [#6946](https://github.com/influxdata/influxdb/issues/6946): Duplicate data for the same timestamp
+- [#5501](https://github.com/influxdata/influxdb/issues/5501): Queries against files that have just been compacted need to point to new files
 
 ## v0.13.0 [2016-05-12]
 
